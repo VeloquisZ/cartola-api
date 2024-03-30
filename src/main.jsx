@@ -2,11 +2,12 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Home from './Home.jsx'
-import Jogadores from './Jogadores.jsx'
+import Jogadores from './jogadores.jsx'
+
 
 const router = createBrowserRouter([
   { path: '/', element: <Home /> },
-  { path: '/:id', element: <Jogadores /> }
+  { path: '/jogadores/:id', element: <Jogadores /> }
 ])
 
 

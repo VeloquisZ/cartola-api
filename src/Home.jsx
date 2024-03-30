@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom"
 import axios from "axios"
 import { useState, useEffect } from "react"
-import Jogadores from "./Jogadores.jsx"
 import './index.css';
 
 function Home() {
@@ -35,7 +34,7 @@ function Home() {
                         {times.map((item, index) =>
                             <li key={index}>
                                 <div>
-                                    <Link to={`/Jogadores`}>
+                                    <Link to={`/jogadores/${item.id}`}>
                                         <img src={item.escudos['30x30']}></img>
                                     </Link>
                                 </div>
