@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 
 function jogadores() {
-    const [jogadores, setJogadores] = useState(null)
+    const [jogadores, setJogadores] = useState([])
     let { id } = useParams()
 
     useEffect(() => {
@@ -15,13 +15,12 @@ function jogadores() {
         let lista = Object.values(resultado.data)
         setJogadores(lista)
     }
-    console.log(jogadores)
-
+console.log(jogadores[3])
     return (
         <>
         {jogadores && (
             <>
-                <h1>{jogadores.apelido}</h1>
+                <h1>{jogadores?.nome}</h1>
               </>
         )}
         {!jogadores && (
