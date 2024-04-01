@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Home from './Home.jsx'
-import Jogadores from './jogadores.jsx'
+import Jogadores from './Jogadores.jsx'
 
 
 const router = createBrowserRouter([

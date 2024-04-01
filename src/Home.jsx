@@ -33,14 +33,14 @@ function Home() {
                     <ul>
                         {times.map((item, index) =>
                             <li key={index}>
-                                <div>
+                                <div className="fotos">
                                     <Link to={`/jogadores/${item.id}`}>
                                         <img src={item.escudos['30x30']}></img>
                                     </Link>
                                 </div>
-                                <div>
-                                    <p> <strong>{item.nome} </strong></p>
-                                    <p> {item.apelido}  </p>
+                                <div className="nomes">
+                                    <p> <strong id="texto">{item.nome} </strong></p>
+                                    <p> <h5 id="texto">{item.apelido}</h5>  </p>
                                 </div>
 
                             </li>
